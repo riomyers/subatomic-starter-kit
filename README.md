@@ -2,7 +2,7 @@
 
 **Free tools to make your AI coding agent actually good.**
 
-Stop fighting your AI assistant. These three products — extracted from the full [Subatomic](https://subatomic.pro) arsenal — solve the most common problems developers face with Claude Code, Gemini CLI, Cursor, and Codex.
+Stop fighting your AI assistant. These two products — extracted from the full [Subatomic](https://subatomic.pro) arsenal — solve the most common problems developers face with AI coding tools.
 
 ## What's Inside
 
@@ -10,40 +10,19 @@ Stop fighting your AI assistant. These three products — extracted from the ful
 Kill AI boilerplate. 40+ rules that eliminate hedging, filler, and "Certainly!" from every AI response.
 
 - `anti-slop-rules.md` — The complete rule set, categorized by slop type
-- `claude-md-snippet.md` — Drop-in CLAUDE.md snippet (copy → paste → done)
+- `claude-md-snippet.md` — Drop-in CLAUDE.md snippet (copy, paste, done)
 - `gemini-config.md` — Equivalent config for Gemini CLI
 - `examples.md` — Before/after examples showing the difference
 
 **Result**: 65% noise reduction in real sessions. Your AI stops writing essays and starts writing code.
 
-### Photon — Token Optimizer
-Understand where your tokens go and stop wasting money.
+### Preon — Project Bootstrapper (Sample)
+One command to make any project AI-ready. Detects your stack, generates configs for every AI platform.
 
-- `analyzer-script.sh` — Scan any project for token costs per file and directory
-- `aiignore-generator.sh` — Auto-generate `.aiignore` files to exclude bloat from AI context
-- `aiignore-templates.md` — Pre-built templates for Next.js, Python, Go, Rust, and more
-- `token-budget-guide.md` — Complete guide to context budgets across every AI tool
+- `detect-stack.sh` — Auto-detect your framework, language, and package manager
+- `sample-template.md` — React + Vite CLAUDE.md template (1 of 10 included in full version)
 
-**Result**: 60% token savings. Pays for itself in the first week if you upgraded.
-
-### Lepton — Pro CLAUDE.md Templates
-Battle-tested templates that solve the #1 developer pain point: ghost context.
-
-**8 templates** for every project type:
-- `solo-dev.md` — Solo developer projects
-- `team-project.md` — Shared repos with multiple devs
-- `frontend-app.md` — React/Vue/Svelte SPAs and SSR apps
-- `api-service.md` — REST APIs and backend services
-- `monorepo.md` — Turborepo, Nx, pnpm workspaces
-- `data-pipeline.md` — ETL, analytics, ML pipelines
-- `devops.md` — Infrastructure, CI/CD, platform engineering
-- `open-source.md` — Public repos with external contributors
-
-**Plus**:
-- `agents-md/AGENTS.md` — Universal format that works on Claude Code, Gemini CLI, Cursor, and Codex
-- `guides/anti-patterns.md` — The 20 mistakes killing your AI workflow
-- `guides/migration-guide.md` — Step-by-step upgrade for your existing CLAUDE.md
-- `guides/validation-checklist.md` — Pre-flight audit before deploying your config
+**Result**: Skip hours of manual config. Full version generates CLAUDE.md, .cursorrules, GEMINI.md, hooks, and .aiignore in one command.
 
 ## Quick Start
 
@@ -54,17 +33,13 @@ git clone https://github.com/riomyers/subatomic-starter-kit.git
 # Drop anti-slop rules into your project
 cat subatomic-starter-kit/gluon/claude-md-snippet.md >> your-project/CLAUDE.md
 
-# Generate a .aiignore for your project
-bash subatomic-starter-kit/photon/aiignore-generator.sh /path/to/your/project
-
-# Copy the right template for your project type
-cp subatomic-starter-kit/lepton/templates/solo-dev.md your-project/CLAUDE.md
-# Then customize the [BRACKETS] with your project specifics
+# Detect your project's stack
+bash subatomic-starter-kit/preon/detect-stack.sh /path/to/your/project
 ```
 
 ## Want More?
 
-The Starter Kit is 3 of 13 Subatomic products. The full arsenal includes:
+The Starter Kit is 2 of 14 active Subatomic products. The full arsenal includes:
 
 | Product | What It Does | Price |
 |---------|-------------|-------|
@@ -72,17 +47,19 @@ The Starter Kit is 3 of 13 Subatomic products. The full arsenal includes:
 | **Sentinel** | PII & secret scrubber — intercepts before AI sees your data | $79 |
 | **Muon** | 15+ safety hooks — blocks destructive commands, detects leaks | $69 |
 | **Neutrino** | Autonomous debug loop — 7-step cycle that actually fixes bugs | $69 |
+| **Photon** | Context guardian — backup/restore state across compaction | $59 |
+| **Quark** | Context linter + 8 battle-tested CLAUDE.md templates | $59 |
 | **Fermion** | Multi-repo knowledge graph — cross-project search & deps | $59 |
 | **Tachyon** | Real-time token budget dashboard with auto-pruning | $49 |
-| **Quark** | Context linter — scans CLAUDE.md for anti-patterns | $49 |
-| **Hadron** | Cross-platform converter — CLAUDE.md ↔ Cursor ↔ Gemini ↔ Codex | $49 |
-| **Reactor** | Curated MCP server stacks — Docker configs that just work | $39 |
-| **Boson** | MCP routing playbook — make your AI actually use its tools | $29 |
+| **Reactor** | MCP command center — routing tables + 5 pre-tested server stacks | $49 |
+| **Meson** | 50+ curated workflow recipes for real dev tasks | $39 |
+| **Hadron** | Cross-platform converter — CLAUDE.md to Cursor, Gemini, Codex | $29 |
+| **Valence** | Team shared memory & configuration sync | $19/mo |
 
 **Bundles save 25-30%:**
-- **Particle Pack** ($99) — Lepton + Quark + Gluon + Tachyon
-- **Shield Wall** ($179) — Muon + Sentinel + Boson + Neutrino
-- **The Standard Model** ($449) — Everything. All 13 products.
+- **Particle Pack** ($119) — Quark + Gluon + Tachyon + Photon
+- **Shield Wall** ($199) — Muon + Sentinel + Reactor + Neutrino
+- **The Standard Model** ($499) — All 13 one-time products
 
 Browse the full catalog at [subatomic.pro](https://subatomic.pro).
 
